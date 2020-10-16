@@ -1,0 +1,54 @@
+#title-row{
+    margin-left:15px;
+    margin-right:15px;
+}
+
+#title-box{
+    background-color:cadetblue;
+    color:gold;
+    margin-top:25px;
+}
+
+#expl{
+    margin-top:0px;
+    margin-bottom:25px;
+    text-align: center;
+    font-size: larger;
+    background-color: white;
+    border:solid;
+    border-color: cadetblue;
+    color:black;
+}
+
+.well{
+    text-align: center;
+    background-color:cadetblue;
+    color:black;
+    font-size: large;
+}
+
+#drop-top{
+    font-size:large;
+    color:white;
+}
+
+#demo-box{
+    text-align: center;
+    background-color: cadetblue;
+}
+
+#demographics-table{
+    font-size: large;
+}
+
+#vis-row1{
+    border:solid;
+    border-color: cadetblue;
+    height:auto;
+}
+
+#vis-row2{
+    border:solid;
+    border-color: cadetblue;
+    margin-top:0px;
+}

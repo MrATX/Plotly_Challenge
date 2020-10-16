@@ -5,44 +5,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
+  <title>Bellybutton of the Beast</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
-<body>
+<body style="background-color:whitesmoke;">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+  <div class="container-flexible">
+    <div class="row" id="title-row">
+      <div id="title-box" class="col-md-12 jumbotron text-center">
+        <h1>The Breathtaking Breadth of Bellybutton Biodiversity</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-1"></div>
+      <div id="expl" class="col-md-10">
+        <p>
+          This dashboard compiles sample data on the biodiversity of various microbes found in bellybuttons.<br>
+          The microbes are divided into OTU's, or Operational Taxonomic Units and data on their discovery will be displayed in those units.<br><br>
+          <strong>Begin by selecting a sample ID # using the dropdown menu below</strong><br>
+          <ul>
+            <u>Once an ID is selected the table and charts below will populate with various findings for the selected sample:</u>
+            <li>The table displays the demographics of the sample patient</li>
+            <li>The bar chart displays the top 10 microbe OTUs discovered in the sample</li>
+            <li>The gauge indicates the washing frequency of the sample patient</li>
+            <li>The bubble chart shows all OTUs and the relative frequency in the selected sample</li>
+          </ul>
+          <br>
+          (For each chart, you can hover your cursor over the items to see more detailed information)
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
         <div class="well">
-          <h5>Test Subject ID No.:</h5>
+          <h5 id="drop-top">Test Subject ID No.:</h5>
           <select id="selDataset">
           </select>
         </div>
         <div class="panel panel-primary">
-          <div class="panel-heading">
+          <div id="demo-box" class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
-          <div id="sample-metadata" class="panel-body">
-            <table id="demographics-table"></table>
+          <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-6">
+              <div id="sample-metadata" class="panel-body">
+                <table id="demographics-table"></table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-5">
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div id="vis-row1" class="col-md-5">
         <div id="bar"></div>
       </div>
-      <div class="col-md-5">
+      <div id="vis-row1" class="col-md-5">
         <div id="gauge"></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-1"></div>
+      <div id="vis-row2" class="col-md-10">
         <div id="bubble"></div>
       </div>
     </div>
